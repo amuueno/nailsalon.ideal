@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nail Salon Idéal home</title>
+        
+        <link rel="icon" type="image/png" href="images/_i_icon_16054_icon_160540_64.png">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css" media="screen and (min-width:901px)">
+	<!--※デフォルトのスタイル(style.css)-->
+
+	<link rel="stylesheet" href="css/tablet.css" media="screen and (max-width:900px) and (min-width:481px)">
+	<!--※タブレット用のスタイル(tablet.css)-->
+
+	<link rel="stylesheet" href="css/smart.css" media="screen and (max-width:480px)">
+	<!--※スマートフォン用のスタイル(smart.css)-->
+<script src="https://kit.fontawesome.com/70d3294ca7.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet">
+        
+<link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        
+    
+        
+        <script type="text/javascript">
+			$(function() {
+				$('.Toggle').click(function() {
+					$(this).toggleClass('active');
+
+					if ($(this).hasClass('active')) {
+						$('.NavMenu').addClass('active');//クラスを付与
+					} else {
+						$('.NavMenu').removeClass('active');//クラスを外す
+					}
+				});
+			});
+		</script>
+        <script>
+
+		$(function() {
+			var showFlag = false;
+			var topBtn = $('#page-top');    
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({'bottom' : '20px'}, 200); 
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({'bottom' : '-100px'}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+		});
+	</script>
+    </head>
+    <body>
+        <div class="wrapper-box">
+        <header>
+            
+            <nav>
+                
+                <div class="nav-box">
+<!--                <img src="images/_i_icon_16054_icon_160540_64.png">-->
+               <a href= "index.html">
+                    <div class="h1-box">
+                    <p>Nail salon</p>
+                    <h1>Idéal</h1>
+                </div>
+                    </a>
+                <div class="nav-home">
+                    <ul>
+                        <li><a href= "index.html">home<span>ホーム</span></a></li>
+                        <li><a href= "about.html">about<span>idealについて</span></a></li>
+                        <li><a href= "menu.html">menu<span>施術メニュー</span></a></li>
+                        
+                        <li><a href= "QandA.html">QandA<span>よくあるご質問</span></a></li>
+                    </ul>
+                    </div>
+                    <div class="yoyaku-rink">
+                        <a href= "https://page.line.me/?accountId=828cbqll">予約・お問い合わせ</a>  
+                    </div>
+                   
+                <!-- ナビメニュー部分 -->
+		<nav class="NavMenu">
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="menu.html">menu</a></li>
+				<li><a href="QandA.html">QandA</a></li>
+			</ul>
+		</nav>
+		<!-- ハンバーガーメニュー部分 --> 
+		<div class="Toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+           
+                </div>
+
+            </nav>
+            <div class="background-img-box"></div>
+        </header>
+        
+        </div>
+        <main>
+            <section class="concept">
+                <div class="concept-position">
+                    
+                     
+                    <p>Nail salon</p>
+                    <h2>Idéal</h2>
+                </div>
+            </section>
+            <section class="menu-koumoku-oya">
+            <h3>Nail salon Idéal</h3>
+        <div class="menu-koumoku">
+            
+          
+                <a href="https://www.instagram.com/rinanogae_nail/">
+                <figure class="f-1">
+                <p>ネイルデザイン</p>
+                </figure>
+                </a>
+            <a href= "menu.html">
+            <figure class="f-2">
+                <p>メニュー</p>
+            </figure>
+                </a>
+           
+                
+                <a href="https://page.line.me/?accountId=828cbqll"> <figure class="f-3"><p>ご予約</p>
+            </figure>
+                     </a>
+        </div>
+                </section>
+            <div class=boder-box></div>
+        <div class="oshirase-background-img">
+        
+        <section class="oshirase">
+            <h4>お知らせ</h4>
+            <ul>
+                <li><span>２０２２．６．１</span><p>Idéal公式ホームページを開設いたしました。</p></li>
+                <li><span>２０２２．４．１</span><p>Idéalが二周年を迎えました。ご挨拶は<a href= "index.html">こちら</a>。</p></li>
+                <li><span>２０２２．３．１５</span><p>当店の感染予防対策については<a href= "index.html">こちら</a>。</p></li>
+            </ul>
+        </section>
+            </div>
+            
+           
+                <div class="instaglam">
+                    <div class="instaglam-1">
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail1.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">  
+                            <img src="images/nail2.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail3.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail4.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail5.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail6.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail7.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail8.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="instaglam-1">
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail1.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">  
+                            <img src="images/nail2.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail3.jpg"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail4.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail5.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail6.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail7.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/rinanogae_nail/">
+                            <img src="images/nail8.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+   
+        </main>
+        <div class="footer-box">
+            <div class="footer-shopname">
+                <a href="index.html">
+                <p>Nail Salon</p>
+                <p>Idéal</p>
+                </a>
+            </div>
+            
+            <address>
+<!--                <p>JNECnailist1級／JNA 衛生管理士</p>-->
+                <p>完全予約制　営業時間10:00-21:00</p>
+                <a href="https://goo.gl/maps/FzoaVi4H7DVFLC5KA"><p>札幌市中央区南3条西3丁目8－1</p>
+                <p>エテルノビル7F Lachouchou内</p></a>
+                
+            </address>
+            <ul>
+                        <li><a href= "index.html"><span>home</span></a></li>
+                        <li><a href= "index.html"><span>about</span></a></li>
+                        <li><a href= "about.html"><span>menu</span></a></li>
+                        <li><a href= "topics.html"><span>topics</span></a></li>
+                        <li><a href= "QandA.html"><span>QandA</span></a></li>
+            </ul>
+          </div>
+        <footer>
+                <p><small>© Nail salon Idéal</small></p>
+            </footer>
+        <p id="page-top"><a href="#wrap">page top</a></p>
+            
+        
+     
+    </body>     
+</html>
